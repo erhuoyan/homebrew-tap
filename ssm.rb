@@ -5,21 +5,21 @@
 class Ssm < Formula
   desc "SSH Session Manager - TUI tool for managing SSH connections"
   homepage "https://github.com/erhuoyan/ssm"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.0/ssm_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d271c1c5e2e06f5d35d1b15bccc305b1373beb910e51905265abd7971d256a89"
+      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.1/ssm_0.3.1_darwin_amd64.tar.gz"
+      sha256 "e5e86c26d05a8d18ba23b951cb50e70fdbbdfd1dbf69fda3a2ec4bcd3ec25c56"
 
       define_method(:install) do
         bin.install "ssm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.0/ssm_0.3.0_darwin_arm64.tar.gz"
-      sha256 "67f8680292dc4579e9d761b84c7b7ac0999e3b6ccfb07f10c648559e82e6bd18"
+      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.1/ssm_0.3.1_darwin_arm64.tar.gz"
+      sha256 "71176600bcfe987599a1f083b69cdedb5237626c12f756abac3cc31fcc85b82b"
 
       define_method(:install) do
         bin.install "ssm"
@@ -29,15 +29,15 @@ class Ssm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.0/ssm_0.3.0_linux_amd64.tar.gz"
-      sha256 "346787428ea3e1e792b8a72792c7ea49da8aef4231fa5f0039450ee8c8bd1f3e"
+      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.1/ssm_0.3.1_linux_amd64.tar.gz"
+      sha256 "a076237369f041ec61ec996af09c6d5843cba1cd836812bf7a6daf3bc0c95d51"
       define_method(:install) do
         bin.install "ssm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.0/ssm_0.3.0_linux_arm64.tar.gz"
-      sha256 "60664877e268ccfc7f13994bdb96102cb1c56061a7dc046d104f1e62e12528ff"
+      url "https://github.com/erhuoyan/ssm/releases/download/v0.3.1/ssm_0.3.1_linux_arm64.tar.gz"
+      sha256 "61f2e4ddf615fd498208fe0b4b96d422cba5de1c3329b66251f036a05a6443a1"
       define_method(:install) do
         bin.install "ssm"
       end
